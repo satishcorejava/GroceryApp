@@ -1,0 +1,30 @@
+{
+  "addresses": [
+    {
+      "id": "addr-1",
+      "label": "Home",
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "isDefault": true
+    },
+    {
+      "id": "addr-2",
+      "label": "Work",
+      "street": "456 Business Ave",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10002",
+      "coordinates": {
+        "lat": 40.758,
+        "lng": -73.9855
+      },
+      "isDefault": false
+    }
+  ]
+}

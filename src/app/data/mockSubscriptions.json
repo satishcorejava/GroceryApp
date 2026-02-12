@@ -1,0 +1,114 @@
+{
+  "subscriptions": [
+    {
+      "id": "sub-001",
+      "userId": "user-123",
+      "productId": "prod-001",
+      "productName": "Fresh Milk (1L)",
+      "productImage": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400",
+      "productUnit": "liter",
+      "frequency": "daily",
+      "quantity": 2,
+      "unitPrice": 65.00,
+      "subscriptionDiscount": 5.00,
+      "startDate": "2026-02-01",
+      "nextDeliveryDate": "2026-02-12",
+      "lastDeliveryDate": "2026-02-11",
+      "preferredTimeSlot": "morning",
+      "status": "active",
+      "totalDeliveries": 10,
+      "totalAmountSaved": 65.00,
+      "createdAt": "2026-02-01T08:00:00Z"
+    },
+    {
+      "id": "sub-002",
+      "userId": "user-123",
+      "productId": "prod-002",
+      "productName": "Organic Eggs (12 pack)",
+      "productImage": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400",
+      "productUnit": "dozen",
+      "frequency": "weekly",
+      "quantity": 1,
+      "unitPrice": 120.00,
+      "subscriptionDiscount": 5.00,
+      "startDate": "2026-01-15",
+      "nextDeliveryDate": "2026-02-15",
+      "lastDeliveryDate": "2026-02-08",
+      "preferredTimeSlot": "morning",
+      "status": "active",
+      "totalDeliveries": 4,
+      "totalAmountSaved": 24.00,
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "sub-003",
+      "userId": "user-123",
+      "productId": "prod-003",
+      "productName": "Whole Wheat Bread",
+      "productImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",
+      "productUnit": "loaf",
+      "frequency": "alternate_days",
+      "quantity": 1,
+      "unitPrice": 45.00,
+      "subscriptionDiscount": 5.00,
+      "startDate": "2026-02-05",
+      "nextDeliveryDate": "2026-02-13",
+      "lastDeliveryDate": "2026-02-11",
+      "preferredTimeSlot": "morning",
+      "status": "paused",
+      "pausedAt": "2026-02-10T14:00:00Z",
+      "pausedUntil": "2026-02-20",
+      "totalDeliveries": 3,
+      "totalAmountSaved": 6.75,
+      "createdAt": "2026-02-05T09:00:00Z"
+    }
+  ],
+  "subscriptionDeliveries": [
+    {
+      "id": "del-001",
+      "subscriptionId": "sub-001",
+      "orderId": "ord-101",
+      "scheduledDate": "2026-02-12",
+      "quantity": 2,
+      "unitPrice": 65.00,
+      "discountApplied": 6.50,
+      "totalAmount": 123.50,
+      "status": "scheduled"
+    },
+    {
+      "id": "del-002",
+      "subscriptionId": "sub-001",
+      "orderId": "ord-100",
+      "scheduledDate": "2026-02-11",
+      "actualDeliveryDate": "2026-02-11T09:30:00Z",
+      "quantity": 2,
+      "unitPrice": 65.00,
+      "discountApplied": 6.50,
+      "totalAmount": 123.50,
+      "status": "delivered"
+    },
+    {
+      "id": "del-003",
+      "subscriptionId": "sub-002",
+      "orderId": "ord-099",
+      "scheduledDate": "2026-02-15",
+      "quantity": 1,
+      "unitPrice": 120.00,
+      "discountApplied": 6.00,
+      "totalAmount": 114.00,
+      "status": "scheduled"
+    }
+  ],
+  "frequencyOptions": [
+    { "value": "daily", "label": "Daily", "description": "Delivered every day" },
+    { "value": "alternate_days", "label": "Alternate Days", "description": "Every 2nd day" },
+    { "value": "weekly", "label": "Weekly", "description": "Once a week" },
+    { "value": "bi_weekly", "label": "Bi-Weekly", "description": "Every 2 weeks" },
+    { "value": "monthly", "label": "Monthly", "description": "Once a month" }
+  ],
+  "timeSlots": [
+    { "value": "morning", "label": "Morning", "time": "6:00 AM - 10:00 AM" },
+    { "value": "afternoon", "label": "Afternoon", "time": "12:00 PM - 4:00 PM" },
+    { "value": "evening", "label": "Evening", "time": "5:00 PM - 9:00 PM" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "user": {
+    "id": "user-123",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "mobile": "9876543210"
+  },
+  "token": "mock-jwt-token-12345"
+}
